@@ -1,6 +1,7 @@
 var seconds=00;
 var tens=00;
-var appendTens=document.getElementById("seconds");
+var appendTens=document.getElementById("tens");
+var appendSeconds=document.getElementById("seconds");
 var buttonStart=document.getElementById("button-start");
 var buttonStop=document.getElementById("button-stop");
 var buttonReset=document.getElementById("button-reset");
@@ -16,7 +17,7 @@ function startTimer(){
         appendTens.innerHTML="0"+ tens;
 
 }
-if(tens<99){
+if(tens>99){
     seconds++;
     appendSeconds.innerHTML ="0"+ seconds
     tens=0;
